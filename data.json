@@ -1,0 +1,59 @@
+{
+	"Sample": {
+		"text": "This is a sample. These are actually just notes. to see if \n\n\n work. Notes: The more information you know and have, the more you realize that you have to act to stop some madness from happening.",
+		"transitions": {
+			"A": {
+				"text": "The safe way.",
+				"target": "Ending A"
+			},
+			"B": {
+				"text": "The better way.",
+				"target": "Ending B"
+			}
+		}
+	},
+	"Start": {
+		"text": "You are an agent working for the CIA. You have just helped them develop an AI system that tries its best to (cite person of interest for idea) identify a person's general characteristics and threat to the nation's security based on his/her public profiles. If the probability of an actual threat is high, then you can manually request to access his/her available search/chat/talk data inside the CIA database, after a special court approves it. Then you and the AI system can analyze both the data to make the analysis more accurate, and can approve an arrest if necessary. Today you were looking over that experimental AI system, where you see that it had identified a user to have a 3% threat to the country, a little higher than the usual 1% for normal people. During training though, people with actual threats usually had >30%. This is the first time that the AI system identified someone as >1%, so you wonder what to do with this.",
+		"transitions": {
+			"A": {
+				"text": "Attempt to request permission from the court to access deeper data",
+				"target": "private data anomaly"
+			},
+			"B": {
+				"text": "Tell this first to your co-workers and boss who developed this system with you",
+				"target": "Ending 2"
+			},
+			"C": {
+				"text": "Ignore it.",
+				"target": "Ending 1"
+			},
+			"D": {
+				"text": "Do private investigations on this person that turned up",
+				"target": "Ending 3"
+			}
+		}
+	},
+
+	"private data anomaly": {
+		"text": "You didn't know if the court will buy your 3% > 1% talk and grant you permission, but surprisingly, they approve it very quickly.",
+		"transitions": {
+			"ex": {
+				"text": "Example transition to ending 4",
+				"target": "Ending 4"
+			}
+		}
+	},
+
+	"Ending 1": {
+		"text": "In the next 5 years, everything has been peaceful. Several >50% threats were detected by your AI, all of them who were promptly arrested and proven that they were about to carry out terrorist attacks. On the 5-year anniversary of your system, all of your co-workers get together and cheer for such a successful system. As you get tired from the partying, you go home and get ready for bed. Making your one last routine email check before bed, you see an email from an unknown sender saying \"this country is about to fall\", with an illluminati symbol. You laugh at it, and fall asleep."
+	},
+	"Ending 2": {
+		"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+	},
+	"Ending 3": {
+		"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+	},
+	"Ending 4": {
+		"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+	}
+}		
