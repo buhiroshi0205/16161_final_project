@@ -27,7 +27,7 @@
 			},
 			"B": {
 				"text": "Directly report to your boss about this.",
-				"target": "Reported notification"
+				"target": "Reported early"
 			},
 			"C": {
 				"text": "Keep it secret and privately investigate him through non-AI means.",
@@ -61,13 +61,17 @@
 		"transitions": {
 			"A": {
 				"text": "Privately investigate him together with your co-worker",
-				"target": "Investigate with co-worker"
+				"target": "Dual private investigation"
 			},
 			"B": {
 				"text": "Report to your boss together on this situation",
 				"target": "Reported late"
 			}
 		}
+	},
+
+	"Dual private investigation": {
+		"text": "“Yeah... I don’t feel particularly comfortable with admitting to our boss a complication so early in the usage of our AI. Perhaps we can figure out what happened if we look at some logs or something. Let’s try looking at it first by ourselves.”\n\nSo you two embark on a journey of digging up the details of what happened during the AI’s classification. However, as most neural networks go, the logged information was too little for them to have been of any use. Giving that up, you two decide to just try to stalk this person online.\n\nHis profile was surprisingly easy to find. What wasn’t as easy to find were the problems with his profile that could have led the AI to give such a weird result. His profiles seemed normal to you, and nothing suggested that he may be of any threat to the nation. But moments later, your co-worker realized something. He was also bewildered by the fact that he can find nothing out of the ordinary. But he then thought that it may be possible for this itself to be a problem, that the profile was too clean to be true.\n\nYou are skeptical about this judgment. But just as you finish your sentence you notice his eyebrows suddenly rise at the sight of something on his computer screen. He did not hesitate to show you: it was an email from “John Doe” with the subject line “The person you want to find”. You two suddenly come to the realization, that the suspect may have seen you two stalk him and has sent you an email. Your co-worker opens up the email and it reads:\n\n“I see that you were looking for me. Don’t worry, I was looking for you too. It’s a good thing that we were able to find each other. But I don’t have much time. The country is in danger, I am in danger, and you are also in danger. Only you are able to get us out of this, but you mustn’t tell anyone about it. If you agree to help me, (and you must, for the sake of everyone,) you must do what I say, word for word, step for step. Otherwise it will be bad. Very bad. The world is in your hands. I’m waiting for your reply.”\n\nYou two both drop into some deep thoughts. Although you two don’t know what to do, you agree not to tell anyone. It was about time to go home anyways, so you call it for the day and go home. The next day, you don’t feel too surprised when your co-worker phoned in for a sick leave from work. You start to feel a little worried for your friend but you make it through the day anyways.\n\nOn the third day he came back to work. At once you asked him what happened yesterday. He gives you his final verdict that the “John Doe” was a conspiracy theorist. “His theories are compelling and interesting though. They’re just not true enough to be true, if you know what I mean. But he seems like a nice dude. So I beg you, let’s just not do anything with him, forget about him entirely and move on with our lives.”\n\nYou are surprised with such a verdict, but you nevertheless understand. You also felt that the best thing to do was just to ignore this little anomaly, as the percentage wasn’t even that high. You two agree to simply move on, and move on you did.\n\nIn the following few years, everything went pretty well. Several >50% threats were detected by your AI, all of them who were promptly arrested and proven that they were about to carry out attacks on the nation. There were a few others that had <10% suspicion, which you learned not to care about. Those people didn’t end up doing bad things either, so you and your co-worker were probably right in just keeping them as-is. At any rate, the system is working, and that’s all that really mattered to you.\n\nTHE END."
 	},
 
 	"Kept secret early": {
@@ -90,12 +94,50 @@
 		}
 	},
 
+	"Reported early": {
+		"text": "You decide that in such times of uncertainty, it is good to seek help from experienced and authoritative people. Plus, it is always good to report truthfully what happened to your boss. So you do precisely that.\n\nAfter describing thoroughly the incident that happened, your boss seems a little annoyed. He seems to not have expected the first case to directly be an anomaly, and was annoyed that the AI didn’t solve any problems, but created more problems for himself. But considering national security and the greater good, he replies to you that he will think about what to do, and assures you that he will come up with a good plan that would be the best for all of us.\n\nAfter the somewhat disheartening report to your boss, on your way back you stop by your co-worker’s table and tell him everything that happened. He is rather surprised that the first time something happened it was this confusing. However, he recognizes that reporting it to your boss was a good move, even though It may have been a little tough. You two agree to keep monitoring the AI and help each other whenever some other weird thing happen again.",
+		"transitions": {
+			"force": {
+				"text": "Null",
+				"target": "Reported notification"
+			}
+		}
+	},
+
+	"Reported notification": {
+		"text": "Events were so much for that day. The rest of the day was rather care-free and ordinary. After a good night’s sleep, the next day, you go to your office a little excited for what’s about to happen. It didn’t take long after you sat down that your boss called for you and your co-worker. You two walk together to your boss’s office, and are delighted that the boss had a smile on his face. He announces to you two that he is thankful for your work on this AI, that it has now proven to be working. It turned out that he did some further investigations with some other departments within NSA and had obtained evidence that the suspect was trying to overthrow the US government through cybernetic means. The suspect’s actions and online footsteps were very well-hidden, and if it wasn’t for your AI no one in NSA would have been able to find this person. He tells you that they were able to track down this suspect’s location via IP and “other methods”, and that FBI got involved and would be sending out a SWAT team to arrest him. And all of this was due to the success of your AI.\n\nYou and your co-worker are dumbfounded. You expected your AI to work, but did not expect it to work so quickly and precisely. But with this unexpected success came sheer joy, and nothing else. You and your co-worker who developed this are both at a loss of words. But you are both very clear what the success of this technology entails. It means a whole new era of national security. It is not perfect, and it is no where near those insane AIs portrayed in the movies and TV shows, but it will be able to bring down big-scale crimes and casualties by previously unimaginable amounts. And you also know that you built it to not have a lot of agency and to not have access to anyone’s private data, so the AI doesn’t become a world-ending dystopian one so commonly portrayed in fiction. And you’re glad that the first AI being put into place was such a good, ethical one, instead of some madman’s crazy uncontrollable AI. This is a good beginning for the nation and for the world.",
+		"transitions": {
+			"A": {
+				"text": "Fast-forward 5 years",
+				"target": "Ending 1 (bad)"
+			},
+			"B": {
+				"text": "Fast-forward 5 years",
+				"target": "Ending 1 (bad)"
+			},
+			"C": {
+				"text": "Fast-forward 5 years",
+				"target": "Ending 1 (bad)"
+			}
+		}
+	},
+
+	"Reported late": {
+		"text": "“I think we should report to our boss. He must know better how to deal with such complicated cases than we do, especially investigation. Come, let’s go together.”\n\nSo you and your co-worker went to your boss and told him every detail that mattered. Your boss seemed a little annoyed. He seemed to not have expected the first case to directly be an anomaly, and was annoyed that the AI didn’t solve any problems, but created more problems for himself. But considering national security and the greater good, he replies to you that he will think about what to do, and assures you that he will come up with a good plan that would be the best for all of us.\n\nAlthough that reply wasn’t particularly satisfying for either of you, you express your thanks and return back to your computer with your co-worker. “Well, I hope all goes well.” He says. You say the same, and then you both go back to working on your own things.",
+		"transitions": {
+			"force": {
+				"text": "Null",
+				"target": "Reported notification"
+			}
+		}
+	},
+
 	"Kept secret": {
 		"text": "You hire a private investigator and start manually looking through the suspect’s social records together. Searching him over the web, you also happen to come across some of the websites and personal webpages that he created. Nothing seemed wrong about his his profile. You start to understand why the AI gave it only a 3% at the end, because it seemed like it truly deserved just a 3%. However, as you look on, with the help of your investigator, you start to feel the other way. Yes the pages were very normal. Perhaps even too normal. Your investigator had pointed out that usually people will post at least some kind of controversial or suspicious thing online, no matter how normal a citizen they were. However, this person had none; it seems like as if the person had created such a perfect profile on purpose.\n\nThere was definitely something going on with this person, and it was a different kind of suspicion than any other type you had explicitly trained your AI to recognize. Perhaps this was why the AI was behaving weirdly. Anyways, it was getting late into evening. Your private investigator needed to go back home and spend the night with his family, so you two both decide to call it off for the day.\n\nAs you go home, your mind becomes filled with imaginations on who such a person could be. Could he be a terrorist who was very careful about his/her public profile? Or could he be just an ordinary citizen who just happened to not have posted weird stuff online? You arrive home, and turn on the lights, your computer, and your TV. But you keep on thinking. Could he actually be from inside NSA, a person so conscious about public profile surveillance?\n\nAnd then glancing up at your personal mailbox on your computer, it hits you. The newest email up there came from the sender “John Doe”, with the subject line “The person you want to find”. You cannot believe yourself, but you immediately make the connection that this could be just the person you were actually looking for. You click into the email, and the contents read:\n\n\"I see that you were looking for me. Don’t worry, I was looking for you too. It’s a good thing that we were able to find each other. But I don’t have much time. The country is in danger, I am in danger, and you are also in danger. Only you are able to get us out of this, but you mustn’t tell anyone about it. If you agree to help me, (and you must, for the sake of everyone,) you must do what I say, word for word, step for step. Otherwise it will be bad. Very bad. The world is in your hands. I’m waiting for your reply.\"",
 		"transitions": {
 			"A": {
 				"text": "Call your private investigator and discuss with him about this email.",
-				"target": "Investigator tells everyone"
+				"target": "Investigator tells NSA"
 			},
 			"B": {
 				"text": "Reply and agree to help him.",
@@ -104,22 +146,98 @@
 			"C": {
 				"text": "Reply and decline to help him.",
 				"target": "Still down the rabbit hole"
+			},
+			"D": {
+				"text": "Not do anything; forget about him and move on.",
+				"target": "You can't ignore me"
 			}
 		}
 	},
 
+	"Investigator tells NSA": {
+		"text": "You call up your private investigator and tell him that something requiring immediate attention happened. You then explain the details of the email to him. Hoping to get some input from him as to what to do in such scenarios. However he doesn’t seem to be in the mood, as you can hear sounds of his children around him in the phone. He does reply “ok, I got it, I’ll think about it”, but after you hang up, you decide to wait until tomorrow afternoon when you meet to ask him again.\n\nThe next day, you go to your office as usual. You are waiting for the afternoon to come quickly, as only then can your questions be answered and further actions be determined. However, before afternoon even came, he came to your office and brought you to your boss. It turned out that he did do some further investigations that night and found that his suspicion were very high. So he called in his acquaintances in the NSA to help him investigate this person, and just this morning they found evidence that the suspect was going to attempt to overthrow the government. Your boss thanked you and your private investigator for the collaboration that made this discovery possible. While jokingly reprimanding you for not directly telling him about such a situation, he assured you that you have done a great job with the AI, and that the suspect is right about to be arrested at around noon by the FBI. Everything was well, and you thank both of them, and leave back to your own computer.\n\nThis was technically the first success that your AI has recorded. Although the events were a little unsatisfying, you are pleased that it simply worked, to the benefit of the country. As you think about this, it increases your determination that you will improve your AI system to be better and better at its task of protecting the nation.",
+		"transitions": {
+			"A": {
+				"text": "Fast-forward 5 years",
+				"target": "Ending 1 (bad)"
+			},
+			"B": {
+				"text": "Fast-forward 5 years",
+				"target": "Ending 1 (bad)"
+			},
+			"C": {
+				"text": "Fast-forward 5 years",
+				"target": "Ending 1 (bad)"
+			}
+		}
+	},
 
+	"Down the rabbit hole": {
+		"text": "You don’t exactly know what’s going on, but this seemed oddly reminiscent of the plot in stories of how a righteous hacker grabs someone’s attention. You decide that you have nothing to lose in sending just a simple email saying “yes”, so you do.\n\nImmediately after, you receive a reply, but that reply doesn’t seem to help much with your understanding. “Meet me at the second bench to the north of century square tomorrow at 4. It is not safe to talk here. Don’t even reply. Meet you there.” Seems like you have to make a big decision either way.",
+		"transitions": {
+			"A": {
+				"text": "Go",
+				"target": "The true story"
+			},
+			"B": {
+				"text": "Not go",
+				"target": "Ending 2 (fade)"
+			}
+		}
+	},
 
-	"Ending 1": {
-		"text": "In the next 5 years, everything has been peaceful. Several >50% threats were detected by your AI, all of them who were promptly arrested and proven that they were about to carry out terrorist attacks. On the 5-year anniversary of your system, all of your co-workers get together and cheer for such a successful system. As you get tired from the partying, you go home and get ready for bed. Making your one last routine email check before bed, you see an email from an unknown sender saying \"this country is about to fall\", with an illluminati symbol. You laugh at it, and fall asleep."
+	"Still down the rabbit hole": {
+		"text": "This sounded too sketchy. But out of courtesy you politely sent an email declining to help him. “Please find other people, if you must.” You added to the end of your email.\n\nBut it didn’t take long before he gave you this reply: “Nope it has to be you. This is too important to this country and only you have the knowledge and ability to stop this. Meet me at the second bench to the north of century square tomorrow at 4. It is not safe to talk here. Don’t even reply. Meet you there.” Seems like you have to make a big decision either way.",
+		"transitions": {
+			"A": {
+				"text": "Go",
+				"target": "The true story"
+			},
+			"B": {
+				"text": "Not go",
+				"target": "Ending 2 (fade)"
+			}
+		}
 	},
-	"Ending 2": {
-		"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+
+	"You can't ignore me": {
+		"text": "Everything just seemed too crazy. Suddenly taken out of your comfort zone in such a short period of time, you decided that you shouldn’t be dealing with him. Time would be better spent analyzing some more concrete cases to help the nation. So you just ignore the email and get ready to go to bed.\n\nExcept, he just sent you another email. It said, “Nope stakes are too high and time is too short. You know I’m not some kid trolling with you. Meet me at the second bench to the north of century square tomorrow at 4. It is not safe to talk here. Don’t even reply. Meet you there.” Seems like you have to make a big decision either way.",
+		"transitions": {
+			"A": {
+				"text": "Go",
+				"target": "The true story"
+			},
+			"B": {
+				"text": "Not go",
+				"target": "Ending 2 (fade)"
+			}
+		}
 	},
-	"Ending 3": {
-		"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+
+	"The true story": {
+		"text": "You decide to risk it. Although you don’t entirely trust him, you recognize that it’s not child’s play either, as he was able to detect you browsing his profiles and investigating him. And with such a public meeting place, you really cannot think of anything immediately bad that could happen to you, such as kidnapping. Although everything is still uncertain, you still go to the bench the next day at the designated time.\n\nIndeed, there was a person waiting for you at the bench, a person about in his 30’s. You sit down beside him and ask him “so you’re the person I’m trying to find” to make sure that it was him. He replies “Yes and I have found you as well.” You’re glad that it was a very causal environment, just two people talking on the bench on an afternoon in a public park. Nothing around you was unusual, so your relax yourself a bit more and start to listen to what he had to tell.\n\n“So I know you work in the NSA, about AI and stuff. That’s why I needed to ask you specifically. There’s something going on in NSA that even you don’t know about, and it goes against all ethical values that anyone can hold. They are creating a powerful AI virus that can spread across all the smart-devices in this world virtually undetected, and from there perform surveillance on anyone who uses any smart-device. Don’t ask me how I know, but it’s a fact. Here, I can show you some proof.”\n\n“But that’s impossible! I work exactly in the AI department, so if there’s anything related to AI news should reach us first!”\n\n“It’s too secret to let such a new person like you know about it. Wait a second... here. Here is the document that they produced about this ultimate AI project. It got leaked thanks to some hacker group in Russia, but what’s important is that now we have it. See, the participating members are all very high up in the ladder, and you won’t even get to know about it. But this is real. Look, there’s even a GPG signature.”\n\nThe GPG signature hits you hard. You know from working there that the NSA did use GPG signatures in documents to prove their authenticity, since it was a cryptographic signature that cannot be reverse-engineered. You pull out your phone and verify the signature; it is indeed am authentic document with an authentic signature.\n\n“And here are some more problems that you may not have known: how much verification do you think they do before arresting someone suspicious?”\n\nYou answer confidently, “it must be a lot. As far as I have heard, every time they arrest someone it’s definitely after some undeniable evidence had been found.”\n\nBut he shakes his head. “Wrong. Opposite. About 10 years ago, the FBI suddenly came crashing into my house and took my mom away. At that time I had no idea what was going on, but I was sure that my mom was 100% innocent, since I was with her everyday. She still got arrested, and evidence that she was working against the government was found, out of thin air. They’d do anything, literally anything to eliminate every single threat possible. Since then I’ve heard many stories of friends who encountered similar tragedies before. I wouldn’t be here today if those never happened...”\n\nYou are still in disbelief. But suddenly you remember an incident 1 month ago, where your team was investigating someone for threat of terrorism. It went for a long time and no one was able to find any evidence that anything was going on, but the moment upper level people from the NSA got involved, evidence was found and he was arrested. That could have been fake evidence just to get it over with. Or else how would such a difficult case be solved in an instant?\n\nYou are just thinking about the possibility of such scandal when you received a text message from your co-worker. It reads: “Hey wtf is going on the AI is reporting you as >10% threat! Don’t do stupid things! It’s not worth it! Please tell me it’s a bug in the system!!!” With this you suddenly realize: if the NSA did forge evidence, then you’re destined to be arrested.\n\nHe gives you a USB. “Look,” he says. “We have been trying to stop this madness, this inhumane madness for ages. However we couldn’t, as they ultimately are the NSA, with ultra-high security. We need someone like you, an insider, to help us stop the omniscient surveillance and evidence faking. Inside this USB is one AI of our own, designed to counteract on those plans. You know how to deploy such a system onto your network. You need to. Stop. The NSA. For the good of all humanity.",
+		"transitions": {
+			"A": {
+				"text": "Take the USB",
+				"target": "Ending 4 (verge)"
+			},
+			"B": {
+				"text": "Leave it",
+				"target": "Ending 3 (stop)"
+			}
+		}
 	},
-	"Ending 4": {
-		"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+
+	"Ending 1 (bad)": {
+		"text": "Fast-forward to 5 years later.\n\nIn the last 5 years, everything has been well. Several >50% threats were detected by your AI, all of them who were promptly arrested and proven that they were about to carry out attacks on the nation. There were a few that was not detected by the AI and ended up doing harm to citizens, but the frequency of that happening was dramatically decreased. So there was no reason not to call the AI a success.\n\nToday was the 5-year anniversary of your AI. All the people in the AI technologies department gathered together to congratulate you and all your co-workers who worked on this project, for such a successful system. The head of NSA even gave a speech on its significance and awarded you a honorary medal for it. Sadly the success of such a system could not be made known to the world, as that will alert criminals, making identifying them harder. But what matters is the truth: that the dream from that college ethics class has been realized, that the world, because of you, is now a safer place to live in.\n\n\nTHE END."
+	},
+	"Ending 2 (fade)": {
+		"text": "Alas, the risk seems to high to listen to such a sudden email from an anonymous sender. You don’t know what’s about to happen, but you really don’t feel like not following his instructions will lead to the country being in danger. After all, you work in the NSA, right? You should know better than him.\n\nOr maybe not? There still is the possibility that the person has something important that you should know. After all, he successfully detected that you were browsing through his profile for something, which isn’t something that an ordinary person could do.\n\nBut you still have no idea who he is or what dangers you could be in if you go. You decide that you shouldn’t get involved what is certainly going to evolve into a mess. You will just do what you have always done: using your learned CS knowledge, to help the world. If he really has something important, then hopefully he can find another person to help him. Because of your uncertainty, you finally decide that you’re neither going to listen to him nor going to further investigate him and expose him to authorities.\n\nIt’s the next day, and the meeting time has already passed. But you received no further emails or anything that could indicate further mess for you. Seeing that he did not further pursue you, you breathe a sigh of relief. As you turn the page over, you try to forget that such a thing even happened. Gently, this whole event faded into the history. You return to your normal daily life, doing what you’re best at to help the world. The threat that the suspect talked about didn’t seem to happen anyways. Although the turn of events wasn’t very exciting, you’re just happy that everything has been fine, and everything has returned to normal.\n\nTHE END."
+	},
+	"Ending 3 (stop)": {
+		"text": "You can’t do this. “That escalated quickly” has no better examples than this. Out of the blue so much has happened, that you cannot really judge and know what’s right and what’s wrong. And suddenly receiving an USB and plugging it into a crucial part of national security just didn’t feel right. You thank this man, acknowledge the evidence, but politely refuse to take the USB, and head back to your office. As you get up, you can see him closing his eyes and shaking his head. But you head straight back to your home. You’ve had enough dose of information, and now you need to digest it, before you can do anything.\n\nBack at home, you receive an email from him. It reads: “Thank you for coming. I understand if you’re not able to make the move right now. This really has a dire consequence for all of us that you didn’t do it, but what else can I hope for? I’ll continue to do what I need to do. Meanwhile, please do the same. If at any time you wish to find me, I’ll be there. Peace.”\n\nA knock on the door prompts you to get up and answer it. A few FBI agents come in to talk to you about what had happened. You mention all that had happened, but also that you did not ultimately believe or listen to what he said. After a brief search of your room, they thank you, tell you that they may come again some other day and ask that you cooperate with them. Finally, they leave.\n\nYou don’t know how much difference to everyone that your choice had made. If the  surveillance project was actually true, then it should actually be stopped. However who was the one to do it? Definitely not you, it is outside your ability. But it warms your heart to know that many people are working for the good of this society. That hacker will definitely continue his endeavor. Perhaps there will be other people who succeed in stopping the plan with another method. As for you, you’ll do what you can to promote ethics, but strictly within your ability. This society is not going to collapse, it will surely improve.\n\nTHE END."
+	},
+	"Ending 4 (verge)": {
+		"text": "You take the USB. If there is one thing that you remembered from the ethics class, it’s that the results of unstoppable surveillance is devastating to the entire world, enough to change the whole course of humanity. You didn’t want it to have went in such a direction, but if humanity is at stake...\n\nYou stand up and head back to your office as fast as possible. While on your way back you receive a second text message informing you that your boss has seen the AI’s report and was greatly displeased. There seems to be no returns now. But it’s only 20%... perhaps if you explained that it was actually a bug you might be fine? But if that thing is true…\n\nYou’ve arrived back at your office. You plug in your USB into your own computer first to check the contents, in case the whole thing was fake. But nope, all the files and code and documents in the USB are as legitimate as they possibly can. As an AI major yourself, you are sure that this isn’t just a joke.\n\nYour co-worker just comes back into the office. Upon seeing you, he shouts your name with a very disturbed look on his face. But you have no time. Not even responding, you get up and run to the server room and plug in the USB as fast as possible. Your co-worker follows you and shouts from afar, “Hey! What are you doing? Stop! Whatever you’re doing, chill! We are here to protect people, not to destroy! Arrrgh the SWAT team is coming in!!!”\n\nYou adeptly locate the source in the USB and compile with all the correct configurations. Now it’s just a matter of time before everything is ready and you can run the AI. Now, all you can hear are the footsteps of heavily-armed police officers right outside a few doors. You don’t even know where your co-worker went. The progress indicator on the computer screen seems to perfectly match the loudness of the footsteps. At 98%, you hear them right outside the door. You type out all the command necessary to run the actual thing and wait until you can press enter. Right as they storm into the door, you see the completion. You hit enter. Then you freeze, as you are told to do.\n\nYou have no idea what would become of you, the NSA, your co-workers, that hacker, or what would become of humanity. But somewhere deep inside your soul, you feel a voice speaking to you, comforting you, that you have done the right thing. You have done all that you could, according to your own judgment of what was right or wrong. And as for what will be your fate, you lay it in the hands of God.\n\nTHE END."
 	}
 }		
