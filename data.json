@@ -1,48 +1,114 @@
 {
-	"Sample": {
-		"text": "This is a sample. These are actually just notes. to see if \n\n\n work. Notes: The more information you know and have, the more you realize that you have to act to stop some madness from happening.",
-		"transitions": {
-			"A": {
-				"text": "The safe way.",
-				"target": "Ending A"
-			},
-			"B": {
-				"text": "The better way.",
-				"target": "Ending B"
-			}
-		}
-	},
+
 	"Start": {
-		"text": "You are an agent working for the CIA. You have just helped them develop an AI system that tries its best to (cite person of interest for idea) identify a person's general characteristics and threat to the nation's security based on his/her public profiles. If the probability of an actual threat is high, then you can manually request to access his/her available search/chat/talk data inside the CIA database, after a special court approves it. Then you and the AI system can analyze both the data to make the analysis more accurate, and can approve an arrest if necessary. Today you were looking over that experimental AI system, where you see that it had identified a user to have a 3% threat to the country, a little higher than the usual 1% for normal people. During training though, people with actual threats usually had >30%. This is the first time that the AI system identified someone as >1%, so you wonder what to do with this.",
+		"text": "As you relax back in your chair, your thoughts naturally drifts to your memories from 5 years ago. 5 years ago, you were still in university; you were still studying AI at CMU. You had jumped onto the AI major the very first year it was released, knowing that it is what you wanted to do. An OG, you could say. But back then were the hard times... you remember working hours longer than any other student around you and pulling all-nighters to learn the materials well, but all while not knowing exactly how you would use these knowledge. If there’s anything that the AI classes taught, it was that you should carefully use your skills in AI to make the world a better and safer place for everyone. \"Because AI technology is dangerous. It is a double-edged sword, and it is up to you guys to determine which side of the blade is used.\"\n\nWell now everything seems to be better than ever. You are at the exact position to help make the country a safer place – an AI officer working at the NSA headquarters. Concerned about the many innocent lives lost due to preventable terrorist attacks and public shootings, you got employed with NSA to develop systems for better prevention of these tragedies. Just recently you completed such a project that was the first of its kind that mankind has ever witnessed. You saw the potential for an AI system to be able to notice subtleties in peoples’ public profiles and figure out potential threats earlier and more accurate than humans could, and developed exactly such a system. Your AI essentially scanned for the public information of people and made classifications of how probable that a given person could be a threat to national security. Of course, you made sure not to try to access any private data, as that clearly violated ethical baselines that you were able to set for yourself in the AI & Humanity class that you took.\n\nYou have just completed this project very recently. Today marks the 10th day that your AI had been put into use. For the past 9 days, everything had been very normal. Your AI was running without errors, and has been successfully gathering data and classifying people. As you drift back into the present, you notice that the AI has spit out a notification for you to read: someone has been classified as having 5% threat to the nation. It only gave a small notification and not a straight out agency-wide alert because it was 5%, as opposed to >30% which was the usual classification for someone actually dangerous. However usually ordinary people were only classified as <2%, with some special people being classified as 3% or so, like yourself. A 5% was definitely something, but it wasn’t too significant either. This is the first time that your AI reported something, so you had to make sure that the first shot was accurate for people to trust in your system. You…",
 		"transitions": {
 			"A": {
-				"text": "Attempt to request permission from the court to access deeper data",
-				"target": "private data anomaly"
+				"text": "Dismiss the notification and simply wait patiently for more updates from the system, since 5% is really not high at all and could just be a statistical anomaly.",
+				"target": "Ignored notification"
 			},
 			"B": {
-				"text": "Tell this first to your co-workers and boss who developed this system with you",
-				"target": "Ending 2"
+				"text": "Discuss with co-workers how to interpret and deal with such information.",
+				"target": "Discussed notification early"
 			},
 			"C": {
-				"text": "Ignore it.",
-				"target": "Ending 1"
-			},
-			"D": {
-				"text": "Do private investigations on this person that turned up",
-				"target": "Ending 3"
+				"text": "Keep it secret and try to find ways to investigate this person by yourself.",
+				"target": "Kept secret early"
 			}
 		}
 	},
 
-	"private data anomaly": {
-		"text": "You didn't know if the court will buy your 3% > 1% talk and grant you permission, but surprisingly, they approve it very quickly.",
+	"Ignored notification": {
+		"text": "You decided that it was too early in the stage and too uncertain to do anything right now, so you wait for further data analysis from the AI. You tell the AI to perform some deeper analysis into that person, and then simply wait for more returned information. While you were intently waiting for the machine to spit out new numbers, a co-worker who worked on this project together passes by you and greets you, and eagerly asks you about how the system is doing. You greet him back and reply that it has been doing fine, and so far it hasn’t identified anyone suspicious. He then asks you to tell him if anything important happens, to which you say yes, and he strolls off to his own desk.\n\nYou stand up to get a cup of coffee. You really don’t know what the results that the AI will give you will be, and you feel a little bit of anxiety but also excitement that something might be about to happen. A few minutes later you come back from the coffee machine and eagerly check the results of the analysis. To your great excitement, the refined prediction now showed an increased percentage of 8%. Your eyes delight in excitement. However, just as you are about to get up to tell your co-worker about this result, the percentage suddenly drops down to 3%, which is the same percentage as yourself. During the development and small-scale testing of this AI, nothing like this had ever happened. You are very confused...",
 		"transitions": {
-			"ex": {
-				"text": "Example transition to ending 4",
-				"target": "Ending 4"
+			"A": {
+				"text": "Tell your co-worker about this.",
+				"target": "Discussed notification late"
+			},
+			"B": {
+				"text": "Directly report to your boss about this.",
+				"target": "Reported notification"
+			},
+			"C": {
+				"text": "Keep it secret and privately investigate him through non-AI means.",
+				"target": "Kept secret late"
 			}
 		}
 	},
+
+	"Discussed notification late": {
+		"text": "You stand up and try to find your co-workers that you built this system with. However it may have been too early in the morning, because you can’t find any of those brilliant minds that have worked with you sitting in their desks. You start to think about other alternatives as to what you should do...\n\nJust as you were stuck thinking about it, you see the door to the office open, and behold, it is just the person you were looking for! You two briefly greet each other and then you tell him about this 5% threat. He seems excited, but you can clearly see the confusion in his eyes. You say to him “yeah I know, this is weird and it has never happened before. But it’s still something, and I really don’t know what to do now. Do you have any ideas?”\n\nHe replies, “Same here man, this isn’t like anything we planned for. I guess AIs are good at pattern recognition on previously seen patterns, and if there is something new, they don’t know what to do and just throw it to the humans, like here. This makes me feel like a machine as well because I don’t know what to do here...”\n\nMore thinking and silence. You suddenly remember though, that you had implemented a deep analysis feature onto your AI, so you suggest that you use that first. Your co-worker agrees, and executes the deep analysis. As both of your breathings cease and heartrates increase, you see the percentage going up. 5 minutes later, it rises to 8%. However, immediately as you are about to speak up, the percentage, under the eyes of both of you, suddenly drops down to 3%.\n\n“Whhhatttt?”\n“the f**k???”\n\nNow you two are even more confused than before. After a long silence, your co-worker speaks up.",
+		"transitions": {
+			"force": {
+				"text": "Null",
+				"target": "Discussed notification"
+			}
+		}
+	},
+
+	"Discussed notification early": {
+		"text": "Confused as you are, after a long while you manage to get up and walk towards your co-worker, who seems to be having a good time coding. You walk up to him and tell him that something interesting has happened. His eyes delights with excitement, but as you tell him in detail what had happened, his excitement gradually turns into a clearly visible confusion.\n\n“This has never happened before in our training and validation... What in the world is going on here?” He exclaims. “I have no idea. All I know is that something happened, something very peculiar. What are we supposed to do now, I have no clue.” You reply.\n\nYou two share a while of silence together. After what felt like forever, your co-worker seems a bit more comfortable and speaks up.",
+		"transitions": {
+			"force": {
+				"text": "Null",
+				"target": "Discussed notification"
+			}
+		}
+	},
+
+	"Discussed notification": {
+		"text": "“You know what? This is something that concerns our national security. I think we should do some more investigation on him, just in case this dude might be up to something.” After a while, he adds “or you know, we can just do the same thing that the AI did to us: throw the problem to someone else! We can just report to our boss that such a situation exist and let him do all the work! I think either way works, which one do you prefer?”",
+		"transitions": {
+			"A": {
+				"text": "Privately investigate him together with your co-worker",
+				"target": "Investigate with co-worker"
+			},
+			"B": {
+				"text": "Report to your boss together on this situation",
+				"target": "Reported late"
+			}
+		}
+	},
+
+	"Kept secret early": {
+		"text": "You decide to investigate this person for yourself. You remember that you programmed a deep analysis function into your AI that uses more data and more time to produce a more refined result. However, judging from experience and reasoning that the AI’s deep analysis function probably won’t work too well given the current circumstances, you decide to use some human ways.",
+		"transitions": {
+			"force": {
+				"text": "Null",
+				"target": "Kept secret"
+			}
+		}
+	},
+
+	"Kept secret late": {
+		"text": "You still decide that it is best to keep these anomalies for yourself before they are made known to everyone else. But still curious and concerned about the presence of such a person, you decide to investigate this person for yourself, using non-AI methods.",
+		"transitions": {
+			"force": {
+				"text": "Null",
+				"target": "Kept secret"
+			}
+		}
+	},
+
+	"Kept secret": {
+		"text": "You hire a private investigator and start manually looking through the suspect’s social records together. Searching him over the web, you also happen to come across some of the websites and personal webpages that he created. Nothing seemed wrong about his his profile. You start to understand why the AI gave it only a 3% at the end, because it seemed like it truly deserved just a 3%. However, as you look on, with the help of your investigator, you start to feel the other way. Yes the pages were very normal. Perhaps even too normal. Your investigator had pointed out that usually people will post at least some kind of controversial or suspicious thing online, no matter how normal a citizen they were. However, this person had none; it seems like as if the person had created such a perfect profile on purpose.\n\nThere was definitely something going on with this person, and it was a different kind of suspicion than any other type you had explicitly trained your AI to recognize. Perhaps this was why the AI was behaving weirdly. Anyways, it was getting late into evening. Your private investigator needed to go back home and spend the night with his family, so you two both decide to call it off for the day.\n\nAs you go home, your mind becomes filled with imaginations on who such a person could be. Could he be a terrorist who was very careful about his/her public profile? Or could he be just an ordinary citizen who just happened to not have posted weird stuff online? You arrive home, and turn on the lights, your computer, and your TV. But you keep on thinking. Could he actually be from inside NSA, a person so conscious about public profile surveillance?\n\nAnd then glancing up at your personal mailbox on your computer, it hits you. The newest email up there came from the sender “John Doe”, with the subject line “The person you want to find”. You cannot believe yourself, but you immediately make the connection that this could be just the person you were actually looking for. You click into the email, and the contents read:\n\n\"I see that you were looking for me. Don’t worry, I was looking for you too. It’s a good thing that we were able to find each other. But I don’t have much time. The country is in danger, I am in danger, and you are also in danger. Only you are able to get us out of this, but you mustn’t tell anyone about it. If you agree to help me, (and you must, for the sake of everyone,) you must do what I say, word for word, step for step. Otherwise it will be bad. Very bad. The world is in your hands. I’m waiting for your reply.\"",
+		"transitions": {
+			"A": {
+				"text": "Call your private investigator and discuss with him about this email.",
+				"target": "Investigator tells everyone"
+			},
+			"B": {
+				"text": "Reply and agree to help him.",
+				"target": "Down the rabbit hole"
+			},
+			"C": {
+				"text": "Reply and decline to help him.",
+				"target": "Still down the rabbit hole"
+			}
+		}
+	},
+
+
 
 	"Ending 1": {
 		"text": "In the next 5 years, everything has been peaceful. Several >50% threats were detected by your AI, all of them who were promptly arrested and proven that they were about to carry out terrorist attacks. On the 5-year anniversary of your system, all of your co-workers get together and cheer for such a successful system. As you get tired from the partying, you go home and get ready for bed. Making your one last routine email check before bed, you see an email from an unknown sender saying \"this country is about to fall\", with an illluminati symbol. You laugh at it, and fall asleep."

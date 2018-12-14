@@ -6,6 +6,10 @@ currentid = 'Start'
 while True:
 	print(data[currentid]['text'])
 	if 'transitions' not in data[currentid]: break
+	if len(data[currentid]['transitions']) == 1:
+		currentid = next(iter(data[currentid]['transitions'].values()))['target']
+		print()
+		continue
 	print()
 	for option, details in sorted(data[currentid]['transitions'].items(), key=lambda x:x[0]):
 		print('{}: {}'.format(option, details['text']))
