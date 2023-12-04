@@ -24,8 +24,6 @@ $ cd src
 $ python3 main.py
 ```
 
-Otherwise you can also play this game via the browser at <http://www.andrew.cmu.edu/user/bw1/projects/16161/>. This link is subject to change after the year 2018, but the changes will always be reflected here.
-
 ## Themes explored
 
 #### Choice and narrative
